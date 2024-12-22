@@ -100,6 +100,40 @@
             </ul>
         </section>
 
+        <section id="admin-login">
+    <h2>Admin Login</h2>
+    <form id="admin-form" onsubmit="handleAdminLogin(event)">
+        <label for="admin-username">Username:</label>
+        <input type="text" id="admin-username" name="admin-username" required>
+        
+        <label for="admin-password">Password:</label>
+        <input type="password" id="admin-password" name="admin-password" required>
+        
+        <button type="submit">Login</button>
+    </form>
+        </section>
+
+        <section id="admin-panel" style="display: none;">
+    <h2>Admin Panel</h2>
+    <p>Selamat datang, Admin. Berikut adalah daftar pemesan tiket:</p>
+    <table id="booking-list">
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Email</th>
+                <th>Pertandingan</th>
+                <th>Jumlah Tiket</th>
+                <th>Total Harga</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+        </section>
+        
+        
+
         <footer>
             <p>&copy; 2024 Football Ticket Booking. All rights reserved.</p>
         </footer>
